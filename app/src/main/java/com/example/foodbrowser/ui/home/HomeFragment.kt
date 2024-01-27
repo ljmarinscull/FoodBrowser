@@ -101,6 +101,7 @@ class HomeFragment : Fragment() {
 
     private fun onClickListener(food: Food) {
         Toast.makeText(requireContext(), food.name, Toast.LENGTH_LONG).show()
+        _viewModel.addEatFood(food)
     }
 
     override fun onDestroyView() {

@@ -16,11 +16,11 @@ fun interface ApiService {
 class RetrofitClient {
 
     companion object {
-        private var instance : ApiService? = null
+        private var instance: ApiService? = null
 
         @Synchronized
         fun getInstance(): ApiService {
-            if (instance == null){
+            if (instance == null) {
                 val client = OkHttpClient()
                     .newBuilder()
                     .writeTimeout(60, TimeUnit.SECONDS)

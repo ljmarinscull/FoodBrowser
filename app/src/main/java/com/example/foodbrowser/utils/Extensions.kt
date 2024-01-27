@@ -6,7 +6,7 @@ import androidx.appcompat.widget.SearchView
 /**
  * Extension function to simplify setting an afterTextChanged action to SearchView components.
  */
-fun SearchView.afterTextChanged(afterTextChanged: (String) -> Unit) {
+ fun SearchView.afterTextChanged(afterTextChanged: (String) -> Unit) {
     this.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
         var timer: CountDownTimer? = null
 
